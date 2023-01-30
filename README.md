@@ -4,6 +4,7 @@ Things we learned while working on the robots!
 [toc]
 - [For Bluetooth Modules](#for-bluetooth-modules)
 - [For SMD Wala Arduino](#for-smd-wala-arduino)
+- [Footprints from EasyEda to Kicad](#footprints-from-easyeda-to-kicad)
 
 ## For Bluetooth Modules
 ### Checklist of parameters to set:
@@ -64,3 +65,10 @@ Things we learned while working on the robots!
 - Now for uploading select `minicore>atmega328` from board, select appropriate port, clock : `16MHz`, variants : `328pb` , upload
 
 
+## Footprints from EasyEda to Kicad
+1. Install easyeda2kicad package using pip  
+   `pip install easyeda2kicad`
+2. Install wxpython package using pip  
+   `pip install wxpython`
+3. Find and save the footprints of a part number found in [LCSC](lcsc.com)  
+   `easyeda2kicad --lcsc_id <partnumber> --full --output <filename>.kicad_sym`
