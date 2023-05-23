@@ -2,10 +2,47 @@
 Things we learned while working on the robots!
 
 [toc]
+- [Learning Roadmap](#learning-roadmap)
 - [For Bluetooth Modules](#for-bluetooth-modules)
 - [For SMD Wala Arduino](#for-smd-wala-arduino)
 - [Footprints from EasyEda to Kicad](#footprints-from-easyeda-to-kicad)
 
+
+## Learning Roadmap
+
+- TinkerCad
+    - LED and Resistor
+    - Breadboard
+- Arduino Basics
+    - LED on/off
+    - LED Brightness increase/decrease
+    - loop function to increase and decrease brightness(task)
+- Sensors
+    - LDR
+    - IR
+    - ultrasonic
+- Actuators
+    - Servo
+    - Motor and Motor drivers
+- Communication Basics
+    - Uart and Bluetooth
+
+Project 1:  bluetooth controlled car
+
+- Circuit Design and Fabrication:
+    - Circuit Fabrication
+    - Aultium/ Kicad
+    
+- Basic Circuit Components
+    - BC547
+        - Switching
+        - NightLight, DayLight
+    - NE555
+        - Blink
+        - Astable Multivibrator
+    - LM7805
+ 
+ 
 ## For Bluetooth Modules
 ### Checklist of parameters to set:
 - [ ] Password
