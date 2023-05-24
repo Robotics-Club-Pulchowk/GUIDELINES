@@ -31,3 +31,11 @@ Project 1:  bluetooth controlled car
         - Blink
         - Astable Multivibrator
     - LM7805
+- Communication Protocols:
+    - UART
+    - I2C
+    - SPI
+- Sensor
+    - MPU6050
+- Control Algorithm
+    - PID algorithm
