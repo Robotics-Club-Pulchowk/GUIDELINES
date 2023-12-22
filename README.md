@@ -48,8 +48,11 @@ Things we learned while working on the robots!
 - https://beatyourbit.com/Files/Docs/HC05%20AT%20Command%20List.pdf
 
 
-## For SMD Wala Arduino 
+## For SMD Wala Arduino and Black wala USB to TTL
 ### USB Port not recognized in UBUNTU 22.04 
+- first try
+      `sudo apt remove brltty `
+  - if issue stiil occurs then follow below.
 - try in 20.04 
 - install CH340 driver using `https://github.com/juliagoda/CH341SER` 
       `cd CH341SER`  
