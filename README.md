@@ -4,7 +4,7 @@ Things we learned while working on the robots!
 [toc]
 - [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-new-members)
 - [For Bluetooth Modules](#for-bluetooth-modules)
-- [For SMD Wala Arduino](#for-smd-wala-arduino)
+- [For SMD Wala Arduino and Black wala USB to TTL](#for-smd-wala-arduino-and-black-wala-usb-to-ttl)
 - [Footprints from EasyEda to Kicad](#footprints-from-easyeda-to-kicad)
  
 ## For Bluetooth Modules
