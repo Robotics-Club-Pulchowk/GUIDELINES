@@ -140,7 +140,7 @@ Things we learned while working on the robots!
    ```cmake
    pico_enable_stdio_usb(picow_ds4 1)
    ```
-- From the project director, make build folder, execute cmake and makefile.
+- From the project directory, make build folder, execute cmake and makefile.
    ```bash
    # make build directory
    mkdir build
@@ -156,6 +156,6 @@ Things we learned while working on the robots!
    # Just hit `tab` `tab` after `/media`.
    cp picow_ds4.uf2 /media/pi/PICOW
    ```
-- Long press `share` and `PS4 button` simultaneous untill `fast blink of PS4 LED`. It will connect to `Pico W`. Pico W blinks its `green LED` if no cotroller is connected and `solid green` if it detects and connects to a controller.
+- Long press `share` and `PS4 button` simultaneous untill `fast blink of PS4 LED`. It will connect to `Pico W`. Pico W blinks its `green LED` if no controller is connected and `solid green` if it detects and connects to a controller.
 
 *Pico W sends uart packet same as ESP32 througth its UART0 default Tx and Rx pin i.e. pin 0 and 1.*
