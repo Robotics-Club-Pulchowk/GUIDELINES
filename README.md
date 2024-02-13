@@ -2,9 +2,11 @@
 Things we learned while working on the robots!
 
 [toc]
-
-See also [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-new-members).
-
+- [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-new-members)
+- [For Bluetooth Modules](#for-bluetooth-modules)
+- [For SMD Wala Arduino and Black wala USB to TTL](#for-smd-wala-arduino-and-black-wala-usb-to-ttl)
+- [Footprints from EasyEda to Kicad](#footprints-from-easyeda-to-kicad)
+- [For Joystick Controller](#for-joystick-controller)
  
 ## For Bluetooth Modules
 ### Checklist of parameters to set:
@@ -114,10 +116,10 @@ See also [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-
 
       void loop() {}
       ```
-   - Open `Serial Monitor`, you can see Bluetooth Mac address at bottom line.
+   - Open `Serial Monitor`, you can see Bluetooth MAC address at bottom line.
    - [Download SixaxisPairTool](https://sixaxispairtool.en.lo4d.com/download) and install. This is only for windows platform.
    - Open SixaxisPairTool and Plug the `PS4 controller` to your PC using `USB Cable`. Driver for the controller will be installed, if it is first time.
-   - Write the `Bluetooth Mac Address` of the `ESP32` into `Master Max Adrress Field` and click update.
+   - Write the `Bluetooth Mac Address` of the `ESP32` into `Master MAC Adrress Field` and click update.
 
 3. **Upload Code**
    - [Downlaod esp32_ps4 codes](https://github.com/Robotics-Club-Pulchowk/Arduino_Codes) and upload it to `ESP32`. You must define `DEBUG` to see data on `Serial Monitor`.
@@ -126,12 +128,18 @@ See also [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-
 
 ### PS4 and Pico W
 - Download, install and setup `Pico W SDK`. [See here](https://github.com/raspberrypi/pico-sdk.git).
-- Clone this repository: `https://github.com/Robotics-Club-Pulchowk/picow_ds4.git` or download zip.
+- Clone this repository: `https://github.com/Robotics-Club-Pulchowk/picow_ds4.git` and update submodule.
    ```bash
    git clone https://github.com/Robotics-Club-Pulchowk/picow_ds4.git
+   cd picow_ds4
+   git submodule update --init --recursive
    ```
 - Find out `MAC Address` of `PS4 Controller`. In easy way, connect it to yout PC and see the MAC Address.
 - Get into the source code folder, open `Src/bt_hid.c`, scroll down a little and replace `remote_addr_string` value by the MAC address of PS4.
+- To print data on 'Serial Monitor' enable stdio usb by editing this line of `Src/CMakeLists.txt`.
+   ```cmake
+   pico_enable_stdio_usb(picow_ds4 1)
+   ```
 - From the project director, make build folder, execute cmake and makefile.
    ```bash
    # make build directory
@@ -144,10 +152,10 @@ See also [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-
    ```
 - Hold the `boot button` and connect the `Pico W` to `PC` using `USB`.
 - Drag and drop the `picow_ds4.uf2` file from `build/src` to `Pico W Mass Storage`. You also can use similar command.
-```bash
-# Just hit `tab` `tab` after `/media`.
-cp picow_ds4.bin /media/pi/PICOW
-```
-- Long press `share` and `PS4 button` simultaneous untill `fast blink of PS4 LED`. It will connect to `Pico W`. Pico W blinks its `green LED` if no cotroller is connected and `solid green` if it detects and connect to a controller.
+   ```bash
+   # Just hit `tab` `tab` after `/media`.
+   cp picow_ds4.uf2 /media/pi/PICOW
+   ```
+- Long press `share` and `PS4 button` simultaneous untill `fast blink of PS4 LED`. It will connect to `Pico W`. Pico W blinks its `green LED` if no cotroller is connected and `solid green` if it detects and connects to a controller.
 
-*Pico W sends uart packet same as ESP32 througth its UART1 default Tx and Rx pin.*
+*Pico W sends uart packet same as ESP32 througth its UART0 default Tx and Rx pin i.e. pin 0 and 1.*
