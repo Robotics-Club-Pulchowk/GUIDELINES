@@ -122,9 +122,9 @@ Things we learned while working on the robots!
    - Write the `Bluetooth Mac Address` of the `ESP32` into `Master MAC Adrress Field` and click update.
 
 3. **Upload Code**
-   - [Downlaod esp32_ps4 codes](https://github.com/Robotics-Club-Pulchowk/Arduino_Codes) and upload it to `ESP32`. You must define `DEBUG` to see data on `Serial Monitor`.
+   - [Downlaod esp32_ps4 codes](https://github.com/Robotics-Club-Pulchowk/Arduino_Codes/tree/main/esp32_ps4) and upload it to `ESP32`. You must define `DEBUG` to see data on `Serial Monitor`.
    - Press `PS4 Button` to power on and connect. If you have set the mac address correctly, it will connect to ESP32 indicated by `solid blue color`.
-   - See data on Serial Monitor. The control data is transmitted throught `UART2` pins of esp32.
+   - See data on Serial Monitor. The control data is transmitted through `UART2` pins of esp32.
 
 ### PS4 and Pico W
 - Download, install and setup `Pico W SDK`. [See here](https://github.com/raspberrypi/pico-sdk.git).
