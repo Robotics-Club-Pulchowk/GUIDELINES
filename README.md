@@ -127,7 +127,13 @@ Things we learned while working on the robots!
    - See data on Serial Monitor. The control data is transmitted through `UART2` pins of esp32.
 
 ### PS4 and Pico W
-- Download, install and setup `Pico W SDK`. [See here](https://github.com/raspberrypi/pico-sdk.git).
+- Install Poco SDK
+Run the `pico_setup.sh` cloning from https://github.com/raspberrypi/pico-setup.git.
+   ```bash
+   git clone https://github.com/raspberrypi/pico-setup.git
+   cd pico-setup
+   export SKIP_VSCODE=1 && bash pico_setup.sh
+   ```
 - Clone this repository: `https://github.com/Robotics-Club-Pulchowk/picow_ds4.git` and update submodule.
    ```bash
    git clone https://github.com/Robotics-Club-Pulchowk/picow_ds4.git
@@ -141,15 +147,17 @@ Things we learned while working on the robots!
    pico_enable_stdio_usb(picow_ds4 1)
    ```
 - From the project directory, make build folder, execute cmake and makefile.
-   ```bash
-   # make build directory
+  ```bash
+   cd picow_ds4
+   git submodule update --init --recursive
    mkdir build
-   # execute cmake file from build directory
    cd build
-   cmake ..
-   # Build project using make
-   make -j8
+   cmake .. # you might use `-DPICO_BOARD=pico_w -DPICO_SDK_PATH=/your/path/to/pico-sdk` if environment is not set
+   make -j <no. of parallel threads>
    ```
+
+   The `.uf2` file will be `build/src/picow_ds4.uf2`
+
 - Hold the `boot button` and connect the `Pico W` to `PC` using `USB`.
 - Drag and drop the `picow_ds4.uf2` file from `build/src` to `Pico W Mass Storage`. You also can use similar command.
    ```bash
