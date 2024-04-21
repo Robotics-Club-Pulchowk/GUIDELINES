@@ -13,11 +13,11 @@
     - Library Path  : <path/to/Kicad_library/MY_LIB.pretty>
 5. Click `OK`
 
-## Guide
+## Download
 
 - Download Kicad from https://www.kicad.org/download/
 
 - We recommend to migrate to `Altium`. See https://www.altium.com/. You can get `Altium` free using `Campus Mail`.
 
 ---
-[Home](./README.md)
+[Home](../README.md)

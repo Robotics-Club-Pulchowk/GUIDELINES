@@ -92,4 +92,4 @@ Run the `pico_setup.sh` cloning from https://github.com/raspberrypi/pico-setup.g
 *Pico W sends uart packet same as ESP32 througth its UART0 default Tx and Rx pin i.e. pin 0 and 1.*
 
 ---
-[Home](./README.md)
+[Home](../README.md)

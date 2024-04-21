@@ -1,21 +1,41 @@
 # GUIDELINES
 
+
+## Roadmap for Beginners
 - [Learning Roadmap](https://github.com/Robotics-Club-Pulchowk/guide-for-new-members)
 
-- [HC05 Bluetooth module](./HC05.md)
 
-- [CH34x Driver](./CH34x_Driver.md)
+## Circuit
 
-- [Circuit Footprints](./Circuit_Footprints.md)
+-  [Circuit Footprints](./markdown/Circuit_Footprints.md)
+
+
+## Communication
+
+- [HC05 Bluetooth module](./markdown/HC05.md)
 
 - [Joystick Controller](./Joystick.md)
 
-- [MPU6050 IMU](./MPU6050.md)
+- [C++ Serial Communication](./markdown/cppserial.md)
+
+
+## Sensors
+
+- [MPU6050 IMU](./markdown/MPU6050.md)
+
+- [Adafruit BNOO8x](./markdown/BNOO8x.md)
+  
+- [TCS3200 Color Sensor](./markdown/TCS3200.md)
+  
+
+## Common Problems
+
+- [CH34x Driver](./markdown/CH34x_Driver.md)
+
+
+
+## STM32 for Beginners
+
+- [STM32 Initial Guide](./markdown/stm32_initial_guide.md)
  
-- [Adafruit BNOO8x](./BNOO8x.md)
-
-- [STM32 Printf Config](./STM32_printf_config.md)
-
-- [C++ Serial Communication](./cppserial.md)
-
-- [TCS3200 Color Sensor](./TCS3200.md)
+- [STM32 Printf Config](./markdown/STM32_printf_config.md)

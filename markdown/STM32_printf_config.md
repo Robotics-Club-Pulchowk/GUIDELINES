@@ -59,4 +59,4 @@
 8. Open `Serial Monitor` and connect.
 
 ---
-[Home](./README.md)
+[Home](../README.md)

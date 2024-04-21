@@ -38,4 +38,4 @@ If upload error persists while uploading on SMD wala Arduino after doing all of 
 - Now for uploading select `minicore>atmega328` from board, select appropriate port, clock : `16MHz`, variants : `328pb` , upload
 
 ---
-[Home](./README.md)
+[Home](../README.md)

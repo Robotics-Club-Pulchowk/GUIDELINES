@@ -20,4 +20,4 @@ Communication medium:
 - Also see https://www.ceva-ip.com/wp-content/uploads/2019/10/SH-2-SHTP-Reference-Manual.pdf
 
 ---
-[Home](./README.md)
+[Home](../README.md)
