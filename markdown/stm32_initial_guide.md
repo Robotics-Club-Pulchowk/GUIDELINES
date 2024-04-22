@@ -12,6 +12,44 @@
 | arm-none-eabi-gcc   | GCC compiler for ARM-based microcontrollers | sudo apt install gcc-arm-none-eabi                                                 |
 -----------------------------------------------------------------------------
 
+## Generate Basic Code
+
+### Pinout & Configuration
+-  Clear default pinouts by pressing `Ctrl + P` and `Enter`.
+-  Go to `RCC > High Speed Clock (HSE)` and select `Crystal Ceramic Resonator`.
+-  Go to `SYS > Debug` and select `Serial Wire`.
+
+    Now you can select pins for LED, UART, Timers and many more.
+
+### Clock Configuration
+- Specify `HCLK (MHx)`. We prefer to use maximum clock frequency.
+
+### Project Manager
+**Project**:
+- Write `Project Name`.
+- Select `Toolchanin/IDE`. We prefer to choose `Makefile`. `Cmake` was not available before.
+
+**Code Generator**:
+- Select copy all used libraries in to the project folder.
+- Tick:
+    - Generate eripheral initialization as a pair '.c/.h' file per peripheral.
+    - Keep user code when regenerating.
+    - Delete priviously generated file when not in use.
+
+Generate code by clicking `GENERATE CODE`. Open your project folder, open terminal at your project folder and run `make` command in your terminal.
+
+If you have selected `Cmake` for your project.
+```bash
+mkdir build
+cd build
+cmake ..
+make
+```
+But this does not generate `.bin` file which is needed for flashing you microcontroller. To generate, you need to use `arm-none-eabi-objcopy`.
+```bash
+arm-none-eabi-objcopy -O binary <your_project_name.elf> <your_project_name.bin>
+```
+
 ## Edit Makefile for Flash
 
 For `stlink`, add these lines below your `Makefile`.
@@ -35,6 +73,7 @@ jflash: $(BUILD_DIR)/jflash
 ```
 
 Use `make flash` or `make jflash` commands in order to flash.
+
 
 ## Debugging Setup
 
@@ -64,5 +103,6 @@ Use `make flash` or `make jflash` commands in order to flash.
    }
    ```
 6. Run `Coretex-Debug` from play `icon`.
+
 
 [home](../README.md)

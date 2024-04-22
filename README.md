@@ -32,6 +32,9 @@
 
 - [CH34x Driver](./markdown/CH34x_Driver.md)
 
+- [Make in Windows](./markdown//makeInWindows.md)
+
+- [Upload Error and Cannot Open Serial Port](./markdown/serialPortErr.md)
 
 
 ## STM32 for Beginners
@@ -39,3 +42,5 @@
 - [STM32 Initial Guide](./markdown/stm32_initial_guide.md)
  
 - [STM32 Printf Config](./markdown/STM32_printf_config.md)
+  
+- [C++ in STM32](./markdown/cpp_stm32.md)
