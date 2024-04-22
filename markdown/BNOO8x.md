@@ -9,9 +9,9 @@ Communication medium:
 
 - Install `Adafruit_BNO08x` library in Arduino.
 
-- Download code from https://github.com/Robotics-Club-Pulchowk/Arduino_Codes/tree/main/bn008_esp
+- Download code from https://github.com/Robotics-Club-Pulchowk/Arduino_Codes/tree/main/bnoo8x.
 
-- You need to `toggle defines` to change communication medium.
+- You need to `toggle defines` to change type of board and communication medium.
 
 - Connection should be done according to pins configured inside code.
 

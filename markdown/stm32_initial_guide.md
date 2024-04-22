@@ -40,7 +40,7 @@ Use `make flash` or `make jflash` commands in order to flash.
 
 1. Install `Cortex-Debug` by `marus25` in VSCODE.
 2. Download Arm Toolchain from [here](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain).
-3. Extract and copy arm-none-eabi-gdb inside `/user/bin`.
+3. Extract and copy arm-none-eabi-gdb inside `/usr/bin`.
 4. Click `debug` button in VSCODE and create `lanch.json` inside `.vscode`.
 5. Update `lauch.json` the json as below.
    ```json
