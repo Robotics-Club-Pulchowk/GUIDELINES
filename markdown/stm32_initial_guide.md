@@ -78,10 +78,9 @@ Use `make flash` or `make jflash` commands in order to flash.
 ## Debugging Setup
 
 1. Install `Cortex-Debug` by `marus25` in VSCODE.
-2. Download Arm Toolchain from [here](https://developer.arm.com/Tools%20and%20Software/GNU%20Toolchain).
-3. Extract and copy arm-none-eabi-gdb inside `/usr/bin`.
-4. Click `debug` button in VSCODE and create `lanch.json` inside `.vscode`.
-5. Update `lauch.json` the json as below.
+2. Extract and copy arm-none-eabi-gdb inside `/usr/bin`.
+3. Click `debug` button in VSCODE and create `lanch.json` inside `.vscode`.
+4. Update `lauch.json` the json as below.
    ```json
    {
     // Use IntelliSense to learn about possible attributes.
@@ -97,12 +96,17 @@ Use `make flash` or `make jflash` commands in order to flash.
             "type": "cortex-debug",
             "runToEntryPoint": "main",
             "servertype": "stlink",
-            "device": "STM32F407VG"
+            "device": "STM32F407VG",
+            "interface": "swd",
+            "gdbPath": "/usr/bin/gdb-multiarch"
         }
     ]
    }
    ```
-6. Run `Coretex-Debug` from play `icon`.
+5. Run `Coretex-Debug` from play `icon`.
+
+   For `OpenOCD`, watch [this](https://www.youtube.com/watch?v=_1u7IOnivnM).
 
 
+---
 [home](../README.md)
