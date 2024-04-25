@@ -14,7 +14,7 @@
 
 - [HC05 Bluetooth module](./markdown/HC05.md)
 
-- [Joystick Controller](./Joystick.md)
+- [Joystick Controller](./markdown/Joystick.md)
 
 - [C++ Serial Communication](./markdown/cppserial.md)
 
