@@ -47,4 +47,4 @@
 
 ## More
 
-- [Embedded Tutorials](https://sagar-bei031.github.io/EmbeddedDocumentation/index.html)
+- [Embedded Tutorials](https://sagar-bei031.github.io/EmbeddedTutorials/index.html)
