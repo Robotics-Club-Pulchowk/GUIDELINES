@@ -44,3 +44,7 @@
 - [STM32 Printf Config](./markdown/STM32_printf_config.md)
   
 - [C++ in STM32](./markdown/cpp_stm32.md)
+
+## More
+
+- [Embedded Tutorials](https://sagar-bei031.github.io/EmbeddedDocumentation/index.html)
