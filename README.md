@@ -45,6 +45,8 @@
   
 - [C++ in STM32](./markdown/cpp_stm32.md)
 
+- [Flashing using STM32CubeProgrammer CLI](./markdown/flash_with_programmer.md)
+
 ## More
 
 - [Embedded Tutorials](https://sagar-bei031.github.io/EmbeddedTutorials/index.html)
