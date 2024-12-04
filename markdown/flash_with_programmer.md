@@ -11,7 +11,7 @@ ln -s ~/STMicroelectronics/STM32Cube/STM32CubeProgrammer/bin/STM32_Programmer_CL
 Create a script `flash.sh` in your project directory with the following script
 ```bash
 #! /bin/bash
-CubeProgrammer -c port=SWD -e all -w <build_directory>/<program_name>.bin 0x8000000 -c port=SWD reset=SWrst
+CubeProgrammer -c port=SWD -w <build_directory>/<program_name>.bin 0x8000000 -c port=SWD reset=SWrst
 ```
 
 ## Flashing using JLink
@@ -19,5 +19,5 @@ CubeProgrammer -c port=SWD -e all -w <build_directory>/<program_name>.bin 0x8000
 Create a script `flash.sh` in your project directory with the following script
 ```bash
 #! /bin/bash
-CubeProgrammer -c port=JLINK -e all -w <build_directory>/<program_name>.bin 0x8000000 -c port=JLINK reset=SWrst
+CubeProgrammer -c port=JLINK -w <build_directory>/<program_name>.bin 0x8000000 -c port=JLINK reset=SWrst
 ```
