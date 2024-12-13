@@ -36,8 +36,17 @@
     This config is for `STM32F407VGT`. For others, you need to modify `hal` include.
 
 3. Modify Makefile
-    - Add `printf_config.c` on `C_SOURCES`.
-    - Add `-u _printf_float` on `LDFLAGS` to print floating points.
+    - Add `printf_config.c` on `C_SOURCES` variable. The `C_SOURCES` variable is located in the MakeFile. 
+        Example: `Core/Src/printf_config.c`
+    - Add `-u _printf_float` on `LDFLAGS` variable to print floating points. The `LDFLAGS` variable is located below the line `# libraries`in the  Makefile.   
+    ```cpp
+    LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections
+    ```
+    The modified `LDFLAGS` is reflected as: 
+
+    ```cpp
+    LDFLAGS = $(MCU) -specs=nano.specs -T$(LDSCRIPT) $(LIBDIR) $(LIBS) -Wl,-Map=$(BUILD_DIR)/$(TARGET).map,--cref -Wl,--gc-sections -u _printf_float
+    ```
 
 
 ## STM32 Cube Programmer
