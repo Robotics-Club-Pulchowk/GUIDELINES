@@ -36,6 +36,8 @@
 
 - [Upload Error and Cannot Open Serial Port](./markdown/serialPortErr.md)
 
+- [Bluepill Not Flashing](./markdown/Bluepill_flash.md)
+
 
 ## STM32 for Beginners
 
