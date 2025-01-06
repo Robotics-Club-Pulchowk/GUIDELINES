@@ -51,4 +51,4 @@
 
 ## More
 
-- [Embedded Tutorials](https://sagar-bei031.github.io/EmbeddedTutorials/index.html)
+- [Embedded Tutorials](https://robotics-club-pulchowk.github.io/EmbeddedTutorials/index.html)
