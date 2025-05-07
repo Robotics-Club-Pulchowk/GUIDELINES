@@ -10,7 +10,7 @@ class Robot {
   UART uart;
   public:
     void init(void);
-}
+};
 
 extern Robot robot;
 ```
