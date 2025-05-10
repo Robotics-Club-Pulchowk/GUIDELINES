@@ -52,4 +52,3 @@
 ## More
 
 - [Embedded Tutorials](https://robotics-club-pulchowk.github.io/EmbeddedTutorials/index.html)
-- [Common Pitfalls](./markdown/common_pitfalls.md)
